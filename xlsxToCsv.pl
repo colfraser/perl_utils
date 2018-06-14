@@ -79,10 +79,6 @@ foreach my $sheet (@{$excel -> {Worksheet}}) {
 	$no_Sheets++;
 }
 
-##  Post table create change.
-##  update [scratchpad_colif_dev].[dbo].[CRM2013]  set TableName = replace(stuff(Entity,1,charindex('(',Entity),''),')','') ;
-##
-
 printf("\n\nNumber of sheets : $no_Sheets \n");
 printf("Number of rows : $no_rows \n");
 printf("Number of rows with cells with sb_ : $no_cells \n");
